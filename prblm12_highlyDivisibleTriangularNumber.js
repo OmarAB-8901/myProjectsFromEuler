@@ -9,20 +9,22 @@
       let resultSum = i + previousNumber;
 
       let totDivisibles = 0;
-      let testNumbers = '';
       for(let j=1; j<=resultSum; j++){
-        console.log(j, resultSum % j, resultSum % j == 0);
-        totDivisibles += resultSum % j == 0 ? 1 : 0;
-        testNumbers += resultSum % j == 0 ? `${j},` : '';
-        // console.log(j, totDivisibles, totDivisibles);
+        
+        if(resultSum % j === 0)
+          totDivisibles ++;
+
+          console.log('j',j, 'R-S:',resultSum, 'R-S%:',resultSum % j, 'R-S%==0:',resultSum % j == 0, 'TOT_DIV:',totDivisibles);
+        // console.log(totDivisibles);
       }
-      console.log('*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-');
-      if(totDivisibles === untilDivisible)
+console.log('*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-');
+      if(totDivisibles > untilDivisible){
         return resultSum;
+      } 
 
       previousNumber += i;
     }
   }
 
-  let result = highlyDivisibleTriangularNumber(7, 5);
+  let result = highlyDivisibleTriangularNumber(10, 6);
   console.log(result);
