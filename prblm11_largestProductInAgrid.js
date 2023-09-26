@@ -26,25 +26,30 @@
 
 
   let largestProductGrid = (totalAdjacent) => {
-
+    console.log(grid.length, grid[0].length);
     let greatesProductAdjacent = 0;
-    let sumAdjacents = 0;
+    let sumAdjacents_1;
+    let sumAdjacents_2;
 
+    // Left to right
     for(let i=0; i<20; i++){
 
-      // Left to right
-      for(let j=0; j<(20 - totalAdjacent); j++){
-   
-        sumAdjacents = 0;
-        for(let k=j; k<(totalAdjacent + k); k++){
-          console.log(k);
-          sumAdjacents += Number( grid[i][k] );
+      for(let j=0; j<=(20-totalAdjacent); j++){
+     
+        let sumDown = grid[i][j] * grid[i][j+1] * grid[i][j+2] * grid[i][j+3];
+        let sumRigth = grid[j][i] * grid[j+1][i] * grid[j+2][i] * grid[j+3][i]
+        sumAdjacents_1 = Math.max(sumRigth, sumDown);        
+
+        if(i <= (20-totalAdjacent)){
+
+          let sumDiag1 = grid[i][j] * grid[i+1][j+1] * grid[i+2][j+2] * grid[i+3][j+3];
+          let sumDiag2 = grid[i][j+3] * grid[i+1][j+2] * grid[i+2][j+1] * grid[i+3][j];
+          sumAdjacents_2 = Math.max(sumDiag1, sumDiag2);
         }
 
-        greatesProductAdjacent = Math.max(greatesProductAdjacent, sumAdjacents);        
-      }
+        greatesProductAdjacent = Math.max(greatesProductAdjacent, sumAdjacents_1, sumAdjacents_2);
+      } 
     }
-
     return greatesProductAdjacent;
   };
 
