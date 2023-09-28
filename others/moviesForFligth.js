@@ -12,20 +12,21 @@ let moviesRecomendation = (fligthDuration, movieDuration) => {
     
       if((elem + movies[j]) === timeRecomendation){
         
-        if(movies[moviesRecomendation[0]] <= elem && movies[moviesRecomendation[1]] <= elem || movies[moviesRecomendation[0]] <= movies[j] && movies[moviesRecomendation[1]] <= movies[j]){
+        if(movies[moviesRecomendation[0]] < elem && movies[moviesRecomendation[1]] < elem || movies[moviesRecomendation[0]] < movies[j] && movies[moviesRecomendation[1] < movies[j]]){
           moviesRecomendation = [i,j];
           continue;
         }
       }
     }
-    
+    // console.log( moviesRecomendation );
     return elem;
   }, movieDuration[0]);
 
-  console.log( moviesRecomendation );
+  return moviesRecomendation;
 };
 
-moviesRecomendation(90, [1, 10, 25, 35, 60, 59, 1]);
+let result = moviesRecomendation(90, [1, 10, 25, 35, 60, 59, 1]);
+console.log(result);
 
 console.log("--------------------------------------------------------------------------------------------------------------");
 
@@ -40,17 +41,17 @@ let otherMoviesRecomendation = (fligthDuration, movieDuration) => {
     
       if((movie + movies[j]) === timeRecomendation){
 
-         if(movies[moviesRecomendation[0]] < movie && movies[moviesRecomendation[1]] < movie || movies[moviesRecomendation[0]] < movies[j] && movies[moviesRecomendation[1]] < movies[j]){
+        if(movies[moviesRecomendation[0]] < movie && movies[moviesRecomendation[1]] < movie || movies[moviesRecomendation[0]] < movies[j] && movies[moviesRecomendation[1] < movies[j]]){
           moviesRecomendation = [i,j];
           continue;
         }
       }
-      console.log( moviesRecomendation );
+      // console.log( moviesRecomendation );
     }
   });
 
   return moviesRecomendation;
 };
 
-let result = otherMoviesRecomendation(90, [1, 10, 25, 35, 60, 59, 1]);
+result = otherMoviesRecomendation(90, [1, 10, 25, 35, 60, 59, 1]);
 console.log(result);
