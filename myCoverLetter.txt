@@ -1,0 +1,25 @@
+
+Carlos Omar Anaya Barajas
+carlosomarab@gmail.com
+33 3400 6796
+October 10, 2023
+
+Dear Recruiter
+
+My name is Omar Anaya, i'm an enthusiastic professional with the interest in appliying for the {{Name of the position}} position with {{Name of the company}}.
+As a Web Developer with over eight years of industry experience in full-time positions, to me is familiar creating and manteining websites and applications
+for a variety of clients, and i feel confident i can make positive contributions for you company.
+
+I bring to the table a diverse set of skills and experiences that make me a valuable candidate for this role. Some highlights of my qualifications include:
+
+  * Front-End and Back-End Development: I have knowledge in both fields front-end including HTML, CSS, JavaScript and some of the web development frameworks like, anngulr and vue, and for the back-end that includes
+    languales lije PHP, C#, and also Javacript with NodeJS.
+
+  * Problem-Solving Skills: I have a strong aptitude for problem-solving and enjoy tackling complex challenges. 
+
+  * Collaboration and Communication: this is one of favorite skill because this gime the tools to increase my profesional skills Learning and also contribuiting with other profesionals.
+
+  * Continuous Learning: Web development is an ever-evolving field, and I am committed to staying up-to-date with the latest trends and technologies. I am always eager to learn and adapt to new tools and methodologies.
+
+Thank you for considering my application. I am eager to discuss how my skills and experiences align with the needs of [Company Name]. Please find my resume attached for your review. 
+I would welcome the opportunity to further discuss how I can contribute to your web development projects.
